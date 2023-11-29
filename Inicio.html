@@ -4,32 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="icon" type="Imagen/x-icon" href="Imagenes/pensar.png">
+    <link rel="icon" type="image/x-icon" href="Imagenes/pensar.png">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow-y: auto;
+            z-index: 1;
+            transform: translateX(-100%);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ddd;
+            transition: color 0.3s ease;
+            display: block;
+        }
+
+        nav a:hover {
+            color: #1e88e5;
+        }
+
+        h1 {
+            color: #1e88e5;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background-color: #1e88e5;
+            margin: 40px auto;
+            width: 60%;
+        }
+
+        .menu-btn {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .main-content {
+            padding: 20px;
+            margin-left: 270px; /* Espacio para el menú */
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .main-content p {
+            margin-bottom: 20px;
+        }
+
+        .main-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Estilos adicionales para mejorar la legibilidad */
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        h2, h4 {
+            text-align: center;
+        }
+    </style>
+    <!-- Enlazar una fuente de Google Fonts para usar Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 </head>
 <body>
-    <nav>
-        <center>
-            <h3>
-        <a href="Inicio.html">Inicio</a>|
-        <a href="Contenido.html">Contenidos</a>|
-        <a href="Actividades.html">actividades</a>|
-        <a href="Evaluacion.html">evaluacion</a>|
-        <a href="MaterialComplementario.html">materialComplementario</a>|
-        <a href="Creditos.html">Creditos</a>|
-        <a href="VideosEducativos.html">VideosEducativos</a>|
-    </h3>
-    </center>
+    <div class="menu-btn" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </div>
+    
+    <nav id="sideMenu">
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Contenido.html">Contenidos</a></li>
+            <li><a href="Actividades.html">Actividades</a></li>
+            <li><a href="Evaluacion.html">Evaluación</a></li>
+            <li><a href="MaterialComplementario.html">Material Complementario</a></li>
+            <li><a href="Creditos.html">Créditos</a></li>
+            <li><a href="VideosEducativos.html">Videos Educativos</a></li>
+        </ul>
     </nav>
     <center>
-        <h1>ESTA ES LA PAGINA DE INICIO</h1>
-        <hr noshade="noshade" color="blue" size="3" width="60%">
+        <h1>ESTA ES LA PÁGINA DE INICIO</h1>
+        <hr>
     </center>
-    <br>
-    <br>
-    <center>
-    <br>
-    <br>
-        <h2>Introducción</h2>
+    <div class="main-content">
+        <center>
+            <h2>Introducción</h2>
         <h4> <p>Bienvenidos a "Matemáticas en Acción": ¡Descubre el Fascinante
             Mundo de los Números de Manera Interactiva!
         </p>
@@ -43,8 +150,17 @@
         <p>¿Alguna vez te has preguntado cómo los números y las formas pueden estar detrás de todo lo que nos rodea, desde la música que escuchamos hasta los juegos que jugamos? Nosotros también, ¡y estamos aquí para explorarlo juntos! En este sitio, encontrarás una amplia gama de actividades interactivas diseñadas para hacer que las matemáticas cobren vida de una manera emocionante y accesible.</p>
     <p>Nuestro objetivo es hacer que aprender matemáticas sea un viaje emocionante y enriquecedor. A través de juegos interactivos, animaciones coloridas, desafíos divertidos y ejemplos prácticos, te invitamos a descubrir la magia de los números, las operaciones y las formas de una manera que te inspirará a abrazar las matemáticas como una herramienta poderosa para comprender nuestro mundo.</p>
     <p>¡Prepárate para sumergirte en un océano de conocimientos matemáticos, donde cada ola es una nueva oportunidad para explorar, descubrir y aprender! ¿Estás listo para hacer que las matemáticas sean tu aventura favorita? ¡Acompáñanos y comencemos este emocionante viaje!</p>
-</h4>
-            
+</h4>       
     </center>
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById('sideMenu');
+            if (sideMenu.style.transform === 'translateX(-100%)') {
+                sideMenu.style.transform = 'translateX(0)';
+            } else {
+                sideMenu.style.transform = 'translateX(-100%)';
+            }
+        }
+    </script>
 </body>
 </html>
