@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(to bottom, #3498db, #ffffff);
+    color: #333; /* Puedes ajustar el color del texto según sea necesario */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, main, footer {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgba(16, 115, 181, 0.8); /* Agrega un fondo azul difuminado al encabezado */
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background: rgba(43, 155, 235, 0.8); /* Agrega un fondo azul difuminado al pie de página */
+}
