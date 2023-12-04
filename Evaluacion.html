@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluacion</title>
     <link rel="icon" type="Imagen/x-icon" href="Imagenes/pensar.png">
+</head>
+
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -45,7 +47,7 @@
         }
 
         nav a:hover {
-            color: #eaf0f5;
+            color: #0789f4;
         }
 
         h1 {
@@ -77,11 +79,32 @@
             top: 20px;
             cursor: pointer;
             z-index: 999;
+
+            
         }
     </style>
      <link rel="stylesheet" href="estilos.css">
+     
+     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+    
+        .imagen-superior-derecha {
+            position: absolute;
+            top: 50px; /* Ajusta la posición desde la parte superior */
+            right: 50px; /* Ajusta la posición desde la derecha */
+            max-width: 150px; /* Puedes ajustar el ancho máximo de la imagen */
+            max-height: 150px; /* Puedes ajustar la altura máxima de la imagen */
+        }
+    </style>
+    
 </head>
+
 <body>
+    <img src="mate.jpg" alt="Imagen Superior Derecha" class="imagen-superior-derecha">
     <div class="menu-btn" onclick="toggleMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
     </div>
@@ -103,6 +126,10 @@
         <br>
         <br>
         <iframe src="https://www.antena3.com/noticias/ciencia/test-matematicas-aprobarias-examen-alumno-secundaria_202005115eba3c3b9d68c8000150b92f.html" width="800" height="600" frameborder="0"></iframe>
+        <br>
+        <br>
+        <br>
+        <br>
     </center>
     <script>
         function toggleMenu() {
@@ -114,5 +141,62 @@
             }
         }
     </script>
+    <center>
+    <body class="container mt-5">
+
+        <form>
+        <div class="form-group">
+        
+        <label>Si tengo 4 manzanas inicialmente y me regalan 2 ¿cuantas manzanas tengo en total?</label>
+        
+        <select class="form-control" id="preguntal">
+        
+        <option>7</option>  
+        <option>5</option>
+        <option>6</option>
+        <option>10</option>
+        
+        </select>
+        </div>
+        
+        <div class="form-group">
+        
+        <label>Daniel tiene 20 dulces, pero se ha comido 9, ¿cuantos dulces le quedan ahora?</label>
+        
+        <select class="form-control" id="pregunta2">
+        
+        <option>11</option>
+        <option>18</option>
+        <option>6</option>
+        <option>4</option>
+
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label>Isabela tenia 4 chocolates y su mamá le ha regalado el doble ¿Cuantos chocolates tiene ahora?</label>
+        
+        <select class="form-control" id="pregunta3">
+        
+        <option>9</option>
+        
+        <option>3</option>
+        
+        <option>8</option>
+        
+        <option>5</option>
+        
+        </select>
+        
+        </div>
+        
+        <button class="btn btn-success mt-2" onclick="calificar()">Responder</button>
+        
+        </form>
+        
+         </body> </center>
+        
+        <script src="preguntas.js"></script>
+         </html>
 </body>
 </html>

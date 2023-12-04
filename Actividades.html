@@ -10,7 +10,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: rgb(177, 197, 227);
             color: #333;
             line-height: 1.6;
         }
@@ -45,11 +45,11 @@
         }
 
         nav a:hover {
-            color: #3498db;
+            color: #0789f4;
         }
 
         h1 {
-            color: #3498db;
+            color: #eaf0f5;
             margin-top: 50px;
         }
 
@@ -67,7 +67,7 @@
         hr {
             border: none;
             height: 3px;
-            background-color: #3498db;
+            background-color: #eaf0f5;
             margin: 40px auto;
         }
 
@@ -79,8 +79,26 @@
             z-index: 999;
         }
     </style>
+     <link rel="stylesheet" href="estilos.css">
+
+     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+    
+        .imagen-superior-derecha {
+            position: absolute;
+            top: 50px; /* Ajusta la posición desde la parte superior */
+            right: 50px; /* Ajusta la posición desde la derecha */
+            max-width: 150px; /* Puedes ajustar el ancho máximo de la imagen */
+            max-height: 150px; /* Puedes ajustar la altura máxima de la imagen */
+        }
+    </style>
 </head>
 <body>
+    <img src="mate.jpg" alt="Imagen Superior Derecha" class="imagen-superior-derecha">
     <div class="menu-btn" onclick="toggleMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
     </div>

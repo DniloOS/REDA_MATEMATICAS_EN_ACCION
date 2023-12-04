@@ -7,13 +7,13 @@
     <link rel="icon" type="image/x-icon" href="Imagenes/pensar.png">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
             margin: 0;
             padding: 0;
             background-color: #f6f6f6;
             color: #333;
             line-height: 1.6;
-        }
+        } 
 
         nav {
             position: fixed;
@@ -49,7 +49,7 @@
         }
 
         nav a:hover {
-            color: #eaf0f5;
+            color: #0789f4;
         }
 
         h1 {
@@ -109,13 +109,39 @@
 
         h2, h4 {
             text-align: center;
+
         }
     </style>
-    <!-- Enlazar una fuente de Google Fonts para usar Roboto -->
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .imagen-superior-derecha {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        max-width: 150px; 
+        max-height: 150px; 
+    }
+</style>
+
+<style>
+    .palabra-especifica {
+        font-family: 'Courier New', monospace;
+        color: rgb(52, 114, 196);
+        height: auto;
+    }
+</style>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <img src="mate.jpg" alt="Imagen Superior Derecha" class="imagen-superior-derecha">
     <div class="menu-btn" onclick="toggleMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
     </div>
@@ -137,8 +163,9 @@
         <hr>
     </center>
     <div class="main-content">
+       
         <center>
-            <h2>Introducción</h2>
+            <h2> <span class="palabra-especifica">Introducción</span></h2>
         <h4> <p>Bienvenidos a "Matemáticas en Acción": ¡Descubre el Fascinante
             Mundo de los Números de Manera Interactiva!
         </p>
