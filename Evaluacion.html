@@ -3,112 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluacion</title>
-    <link rel="icon" type="Imagen/x-icon" href="Imagenes/pensar.png">
+    <title>EVALUACIÓN</title>
+    <link rel="icon" type="image/x-icon" href="Imagenes/pensar.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="estilos.css">
 </head>
-
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            left: -250px; 
-            background-color: #fff;
-            text-align: center;
-            padding: 20px;
-            width: 250px;
-            height: 100%;
-            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-            transition: left 0.3s ease;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            margin: 15px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #555;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #0789f4;
-        }
-
-        h1 {
-            color: #eaf0f5;
-            margin-top: 50px;
-        }
-
-        h2 {
-            color: #444;
-            margin-bottom: 30px;
-        }
-
-        h4 {
-            color: #666;
-            max-width: 800px;
-            margin: 0 auto 20px;
-        }
-
-        hr {
-            border: none;
-            height: 3px;
-            background-color: #eaf0f5;
-            margin: 40px auto;
-        }
-
-        .menu-btn {
-            position: fixed;
-            left: 20px;
-            top: 20px;
-            cursor: pointer;
-            z-index: 999;
-
-            
-        }
-    </style>
-     <link rel="stylesheet" href="estilos.css">
-     
-     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            position: relative;
-        }
-    
-        .imagen-superior-derecha {
-            position: absolute;
-            top: 50px; 
-            right: 50px; 
-            max-width: 150px; 
-            max-height: 150px; 
-        }
-    </style>
-    
-</head>
-
 <body>
-    <img src="mate.jpg" alt="Imagen Superior Derecha" class="imagen-superior-derecha">
-    <div class="menu-btn" onclick="toggleMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-    </div>
-    
     <nav id="sideMenu">
         <ul>
             <li><a href="Inicio.html">Inicio</a></li>
@@ -117,86 +17,123 @@
             <li><a href="Evaluacion.html">Evaluación</a></li>
             <li><a href="MaterialComplementario.html">Material Complementario</a></li>
             <li><a href="Creditos.html">Créditos</a></li>
-            <li><a href="VideosEducativos.html">Videos Educativos</a></li>
         </ul>
     </nav>
+    <img src="mate.jpg" alt="Imagen Superior Derecha" class="imagen-superior-derecha">
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+    </div>
     <center>
-        <h1>ESTA ES LA PAGINA DE EVALUACION</h1>
-        <hr noshade="noshade" color="red wine" size="3" width="60%">
-        <br>
-        <br>
-        <iframe src="https://www.antena3.com/noticias/ciencia/test-matematicas-aprobarias-examen-alumno-secundaria_202005115eba3c3b9d68c8000150b92f.html" width="800" height="600" frameborder="0"></iframe>
-        <br>
-        <br>
-        <br>
-        <br>
+        <h1>ESTA ES LA PÁGINA DE EVALUACIÓN</h1>
+        <hr color="red" size="3" width="60%">
     </center>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <p><strong>1. Tienes una receta que rinde 4 porciones, pero necesitas hacer comida para 8 personas. ¿Cuánto debes ajustar los ingredientes? </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta1" id="p11"> Duplicar </li>
+                        <li><input type="radio" name="pregunta1" id="p12"> Triplicar</li>
+                        <li><input type="radio" name="pregunta1" id="p13"> Cuadruplicar</li>
+                        <li><input type="radio" name="pregunta1" id="p14"> Ninguna de las anteriores</li>
+                    </ol>
+                    <p><strong>2.En una fiesta, compras refrescos en paquetes de 6 latas. Si hay 18 invitados, ¿cuántos paquetes necesitas comprar para que todos tengan al menos una lata? </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta2" id="p21"> 7</li>
+                        <li><input type="radio" name="pregunta2" id="p23"> 5</li>
+                        <li><input type="radio" name="pregunta2" id="p22"> 2</li>
+                        <li><input type="radio" name="pregunta2" id="p24"> 3</li>
+                    </ol>
+                    <p><strong>3.Tienes una deuda de $120 y decides pagar $20 cada mes. ¿Cuántos meses tomará saldar completamente la deuda?</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta3" id="p31"> 8</li>
+                        <li><input type="radio" name="pregunta3" id="p33"> 6</li>
+                        <li><input type="radio" name="pregunta3" id="p32"> 7</li>
+                        <li><input type="radio" name="pregunta3" id="p34"> 9</li>
+                    </ol>
+                    <p><strong>4. Si trabajas 8 horas al día y ganas $15 por hora, ¿cuánto ganarás en una semana (5 días de trabajo)?</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta4" id="p41"> $600</li>
+                        <li><input type="radio" name="pregunta4" id="p42"> $400</li>
+                        <li><input type="radio" name="pregunta4" id="p43"> $300</li>
+                        <li><input type="radio" name="pregunta4" id="p44"> $700</li>
+                    </ol>
+                    <p><strong>5. Compraste un artículo con descuento del 15%. Si el precio original era $80, ¿cuánto pagaste después del descuento?</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta5" id="p55"> $98</li>
+                        <li><input type="radio" name="pregunta5" id="p51"> $56</li>
+                        <li><input type="radio" name="pregunta5" id="p52"> $68</li>
+                        <li><input type="radio" name="pregunta5" id="p53"> $98 </li>
+                    </ol>
+                    <p><strong>6. Tienes una pizza circular dividida en 8 porciones iguales. Si te comes 3 porciones, ¿qué fracción de la pizza queda? </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta6" id="p61"> 3/8</li>
+                        <li><input type="radio" name="pregunta6" id="p62"> 5/7</li>
+                        <li><input type="radio" name="pregunta6" id="p66"> 3/6</li>
+                        <li><input type="radio" name="pregunta6" id="p64"> 9/4</li>
+                    </ol>
+                    <p><strong>7. Compraste 3 entradas para el cine a $10 cada una y te dieron un descuento del 20%. ¿Cuánto pagaste en total?</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta7" id="p71"> $32 </li>
+                        <li><input type="radio" name="pregunta7" id="p77"> $48</li>
+                        <li><input type="radio" name="pregunta7" id="p73"> $26</li>
+                        <li><input type="radio" name="pregunta7" id="p74"> $45</li>
+                    </ol>
+                    <p><strong>8. Necesitas pintar una habitación con 4 paredes. Si cada lata de pintura cubre 10 metros cuadrados y la habitación tiene 40 metros cuadrados, ¿cuántas latas necesitas comprar?</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta8" id="p88"> 3</li>
+                        <li><input type="radio" name="pregunta8" id="p82"> 5</li>
+                        <li><input type="radio" name="pregunta8" id="p83"> 6</li>
+                        <li><input type="radio" name="pregunta8" id="p84"> 1</li>
+                    </ol>
+                    <p><strong>9. Tienes un jardín rectangular de 15 metros de largo y 10 metros de ancho. Si quieres poner césped en toda el área, ¿cuántos metros cuadrados de césped necesitas comprar?</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta9" id="p91"> 200</li>
+                        <li><input type="radio" name="pregunta9" id="p92"> 400</li>
+                        <li><input type="radio" name="pregunta9" id="p93"> 100</li>
+                        <li><input type="radio" name="pregunta9" id="p99"> 500</li>
+                    </ol>
+                    <p><strong>10. Vas de compras y ves un artículo rebajado en un 30%. Si originalmente costaba $50, ¿cuánto pagarás después del descuento?</strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta10" id="p01"> $45</li>
+                        <li><input type="radio" name="pregunta10" id="p02"> $56</li>
+                        <li><input type="radio" name="pregunta10" id="p03"> $35</li>
+                        <li><input type="radio" name="pregunta10" id="p04"> $55</li>
+                    </ol>
+                    <hr />
+                    <button type="button" class="btn btn-primary" onclick="resultado()">RESULTADO</button>
+                    <hr />
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="respuestas.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+        crossorigin="anonymous"></script>
     <script>
         function toggleMenu() {
             const sideMenu = document.getElementById('sideMenu');
-            if (sideMenu.style.left === '-250px') {
-                sideMenu.style.left = '0';
+            if (sideMenu.style.transform === 'translateX(-100%)') {
+                sideMenu.style.transform = 'translateX(0)';
             } else {
-                sideMenu.style.left = '-250px';
+                sideMenu.style.transform = 'translateX(-100%)';
             }
         }
     </script>
-    <center>
-    <body class="container mt-5">
-
-        <form>
-        <div class="form-group">
-        
-        <label>Si tengo 4 manzanas inicialmente y me regalan 2 ¿cuantas manzanas tengo en total?</label>
-        
-        <select class="form-control" id="preguntal">
-        
-        <option>7</option>  
-        <option>5</option>
-        <option>6</option>
-        <option>10</option>
-        
-        </select>
-        </div>
-        
-        <div class="form-group">
-        
-        <label>Daniel tiene 20 dulces, pero se ha comido 9, ¿cuantos dulces le quedan ahora?</label>
-        
-        <select class="form-control" id="pregunta2">
-        
-        <option>11</option>
-        <option>18</option>
-        <option>6</option>
-        <option>4</option>
-
-        </select>
-        </div>
-
-        <div class="form-group">
-        <label>Isabela tenia 4 chocolates y su mamá le ha regalado el doble ¿Cuantos chocolates tiene ahora?</label>
-        
-        <select class="form-control" id="pregunta3">
-        
-        <option>9</option>
-        
-        <option>3</option>
-        
-        <option>8</option>
-        
-        <option>5</option>
-        
-        </select>
-        
-        </div>
-        
-        <button class="btn btn-success mt-2" onclick="calificar()">Responder</button>
-        
-        </form>
-        
-         </body> </center>
-        
-        <script src="preguntas.js"></script>
-         </html>
 </body>
 </html>

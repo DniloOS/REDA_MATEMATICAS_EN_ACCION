@@ -3,99 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACTIVIDADES</title>
-    <link rel="icon" type="Imagen/x-icon" href="Imagenes/pensar.png">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(177, 197, 227);
-            color: #333;
-            line-height: 1.6;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            left: -250px; 
-            background-color: #fff;
-            text-align: center;
-            padding: 20px;
-            width: 250px;
-            height: 100%;
-            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-            transition: left 0.3s ease;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            margin: 15px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #555;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #0789f4;
-        }
-
-        h1 {
-            color: #eaf0f5;
-            margin-top: 50px;
-        }
-
-        h2 {
-            color: #444;
-            margin-bottom: 30px;
-        }
-
-        h4 {
-            color: #666;
-            max-width: 800px;
-            margin: 0 auto 20px;
-        }
-
-        hr {
-            border: none;
-            height: 3px;
-            background-color: #eaf0f5;
-            margin: 40px auto;
-        }
-
-        .menu-btn {
-            position: fixed;
-            left: 20px;
-            top: 20px;
-            cursor: pointer;
-            z-index: 999;
-        }
-    </style>
-     <link rel="stylesheet" href="estilos.css">
-
-     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            position: relative;
-        }
-    
-        .imagen-superior-derecha {
-            position: absolute;
-            top: 50px; 
-            right: 50px; 
-            max-width: 150px; 
-            max-height: 150px; 
-        }
-    </style>
+    <title>Inicio</title>
+    <link rel="icon" type="image/x-icon" href="Imagenes/pensar.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <img src="mate.jpg" alt="Imagen Superior Derecha" class="imagen-superior-derecha">
@@ -111,26 +22,26 @@
             <li><a href="Evaluacion.html">Evaluación</a></li>
             <li><a href="MaterialComplementario.html">Material Complementario</a></li>
             <li><a href="Creditos.html">Créditos</a></li>
-            <li><a href="VideosEducativos.html">Videos Educativos</a></li>
         </ul>
     </nav>
-    <center>
-        <h1>ESTA ES LA PAGINA DE ACTIVIDADES</h1>
-        <hr noshade="noshade" color="purple" size="3" width="60%">
-    <br>
-    <br>
+    
+    <div class="main-content">
+        <center>
+        <h1>ESTA ES LA PÁGINA DE ACTIVIDADES</h1>
+        </center>
+        <hr>
+        <iframe src="https://www.cerebriti.com/juegos-de-matematicas/sumas--restas--multiplicaciones-y-divisiones" width="100%" height="600" frameborder="0"></iframe>
+    </div>
 
-    <iframe src="https://www.cerebriti.com/juegos-de-matematicas/sumas--restas--multiplicaciones-y-divisiones" width="800" height="600" frameborder="0"></iframe>
-</center>
-<script>
-    function toggleMenu() {
-        const sideMenu = document.getElementById('sideMenu');
-        if (sideMenu.style.left === '-250px') {
-            sideMenu.style.left = '0';
-        } else {
-            sideMenu.style.left = '-250px';
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById('sideMenu');
+            if (sideMenu.style.transform === 'translateX(-100%)') {
+                sideMenu.style.transform = 'translateX(0)';
+            } else {
+                sideMenu.style.transform = 'translateX(-100%)';
+            }
         }
-    }
-</script>
+    </script>
 </body>
 </html>

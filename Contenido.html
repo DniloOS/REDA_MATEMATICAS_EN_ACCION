@@ -3,142 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenido</title>
-    <link rel="icon" type="Imagen/x-icon" href="Imagenes/pensar.png">
-    <style>
-    body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            left: -250px; 
-            background-color: #fff;
-            text-align: center;
-            padding: 20px;
-            width: 250px;
-            height: 100%;
-            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-            transition: left 0.3s ease;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            margin: 15px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #555;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #0789f4;
-        }
-
-        h1 {
-            color: #eaf0f5;
-            margin-top: 50px;
-            margin: 20px 0;
-        }
-
-        h2 {
-            color: #444;
-            margin-bottom: 30px;
-            margin: 20px 0;
-        }
-
-        h4 {
-            color: #201f1f;
-            max-width: 800px;
-            margin: 0 auto 20px;
-            text-align: justify;
-        }
-
-        hr {
-            border: none;
-            height: 3px;
-            background-color: #eaf0f5; 
-            margin: 40px auto;
-        }
-
-        .menu-btn {
-            position: fixed;
-            left: 20px;
-            top: 20px;
-            cursor: pointer;
-            z-index: 999;
-        }
-
-        .main-content {
-            padding: 20px;
-            margin-left: 270px; 
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            color: #333;
-        }
-
-        .main-content p {
-            margin-bottom: 20px;
-        }
-
-        .main-content p:last-child {
-            margin-bottom: 0;
-        }
-
-        
-        p {
-            font-size: 16px;
-            line-height: 1.8;
-        }
-
-    </style>
-     <link rel="stylesheet" href="estilos.css"> 
-
-     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            position: relative;
-        }
-    
-        .imagen-superior-derecha {
-            position: absolute;
-            top: 50px; 
-            right: 50px; 
-            max-width: 150px; 
-            max-height: 150px; 
-        }
-    </style>
-
-<style>
-    .palabra-especifica {
-        font-family: 'Courier New', monospace;
-        color: rgb(52, 114, 196);
-        height: auto;
-    }
-</style>
-    
+    <title>Inicio</title>
+    <link rel="icon" type="image/x-icon" href="Imagenes/pensar.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body><img src="mate.jpg" alt="Imagen Superior Derecha" class="imagen-superior-derecha">
-    
-    <div class="menu-btn" onclick="toggleMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-    </div>
-    
+
+<body>
     <nav id="sideMenu">
         <ul>
             <li><a href="Inicio.html">Inicio</a></li>
@@ -147,15 +18,22 @@
             <li><a href="Evaluacion.html">Evaluación</a></li>
             <li><a href="MaterialComplementario.html">Material Complementario</a></li>
             <li><a href="Creditos.html">Créditos</a></li>
-            <li><a href="VideosEducativos.html">Videos Educativos</a></li>
         </ul>
     </nav>
+    <img src="mate.jpg" alt="Imagen Superior Derecha" class="imagen-superior-derecha">
 
-    <center>
-        <br>
-        <h1>ESTA ES LA PÁGINA DE CONTENIDO</h1>
-        <hr noshade="noshade" color="red" size="3" width="60%">
-    </center>
+    <div class="menu-btn" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+    </div>
+
+    <div class="main-content">
+        <center>
+            <h1>ESTA ES LA PÁGINA DE CONTENIDO</h1>
+            <hr color="red" size="3" width="60%">
+        </center>
     <div class="main-content">
     <center>
         <h2><span class="palabra-especifica">SUMA</span></h2></center>
@@ -375,20 +253,16 @@
             <br>
             <dd>es la cantidad que queda sobrante después de realizar una división cuyo resultado no es exacto.</dd>
 
-            
-
-            
-
-   
-            <script>
-                function toggleMenu() {
-                    const sideMenu = document.getElementById('sideMenu');
-                    if (sideMenu.style.left === '-250px') {
-                        sideMenu.style.left = '0';
-                    } else {
-                        sideMenu.style.left = '-250px';
-                    }
+             <script>
+            function toggleMenu() {
+                const sideMenu = document.getElementById('sideMenu');
+                if (sideMenu.style.transform === 'translateX(-100%)') {
+                    sideMenu.style.transform = 'translateX(0)';
+                } else {
+                    sideMenu.style.transform = 'translateX(-100%)';
                 }
-            </script>
+            }
+        </script>
 </body>
+
 </html>
